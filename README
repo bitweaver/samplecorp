@@ -1,0 +1,5 @@
+Be sure to add something like the following to your config_inc.php after installation:
+
+$gPreScan = array( 'kernel', 'samplecorp', 'users', 'liberty' );
+
+Since samplecorp overrides the default user class, it needs to be scanned prior to the UsersPackage
