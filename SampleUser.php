@@ -5,9 +5,6 @@ $userDir = dirname( dirname( __FILE__ ) ).'/users/';
 require_once( $userDir.'BitPermUser.php' );
  
 class SampleUser extends BitPermUser {
-	function SampleUser() {
-		parent::BitPermUser();
-	}
 
 	// validate the user in the bitweaver database - validation is case insensitive, and we like it that way!
 	function validateBitUser( $pLogin, $pass, $challenge, $response ) {
